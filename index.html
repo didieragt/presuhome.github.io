@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        </header>
+        <main class="main">
+            <table>
+                <caption>PRESUPUESTO OCTUBRE</caption>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>presupuestado</th>
+                        <th>Gasto Real</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot class="tfoot">
+                    <tr>
+                        <td>TOTAL</td>
+                        <td id="total_pre"></td>
+                        <td id="total_real"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table class="tablaDos">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Presupuestado</th>
+                        <th>Real</th>
+                        <th>Diferencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="aporte60">
+                        <td>Aporte 60%</td>
+                    </tr>
+                    <tr id="aporte40">
+                        <td>Aporte 40%</td>
+                    </tr>
+                </tbody>
+                <tfoot class="tfoot">
+                    <tr>
+                        <td colspan="3">Saldo</td>
+                        <td id="saldo"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="card">
+                <h2>AHORRO</h2>
+                <ul>
+                    <li>CAJITA NU<span id="cajitaNu"></span></li>
+                    <li>CDT NU<span id="cdtNu"></span></li>
+                    <li>TOTAL<span id="totalNu"></span></li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

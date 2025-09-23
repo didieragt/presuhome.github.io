@@ -1,0 +1,115 @@
+/* Reset básico de CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0px 1rem;
+    gap: 2rem;
+}
+.main{
+    border: 1px solid #CCC;
+    height: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 40rem;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+thead tr th{
+    padding: .5rem;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+tbody tr td {
+    padding: 0.5rem;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6f0ff;
+    transition: background-color 0.3s ease;
+}
+
+.tfoot{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+}
+.tfoot tr td{
+    padding: .5rem;
+    border: 1px solid #000;
+    margin-top: 1rem;
+}
+
+.tablaDos {
+    width: 100%;
+    max-width: 30rem;
+    margin: 25px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 40rem;
+    margin: 20px auto;
+    text-align: center;
+}
+.card h2{
+    font-size: 2rem;
+    padding: .5rem;
+}
+.card ul{
+    list-style: none;
+    padding: 0;
+}
+.card li{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin: .5rem 4rem;
+    border: 1px solid #CCC;
+    font-size: 1rem;
+}
+.card li:last-child {
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+}

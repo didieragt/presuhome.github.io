@@ -1,0 +1,86 @@
+[
+ {
+  "concepto": "Arriendo",
+  "presupuesto": 110000,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Parqueo Carro",
+  "presupuesto": 67000,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Parqueo moto 1",
+  "presupuesto": 47000,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Parqueo moto 2",
+  "presupuesto": 70000,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Mercado",
+  "presupuesto": 800000,
+  "gasto_real": 0,
+  "tipo_gasto": "Variable",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Fondo",
+  "presupuesto": 200000,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Jardin Adrian",
+  "presupuesto": 200000,
+  "gasto_real": 200000,
+  "tipo_gasto": "Fijo",
+  "estado": "pago"
+ },
+ {
+  "concepto": "Gasolina",
+  "presupuesto": 250000,
+  "gasto_real": 0,
+  "tipo_gasto": "Variable",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Servicios",
+  "presupuesto": 200000,
+  "gasto_real": 0,
+  "tipo_gasto": "Variable",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Cuidado Adrian",
+  "presupuesto": 500000,
+  "gasto_real": 500000,
+  "tipo_gasto": "Fijo",
+  "estado": "pago"
+ },
+ {
+  "concepto": "Admin Apto",
+  "presupuesto": 330350,
+  "gasto_real": 0,
+  "tipo_gasto": "Fijo",
+  "estado": "pendiente"
+ },
+ {
+  "concepto": "Cuota Banco",
+  "presupuesto": 710000,
+  "gasto_real": 0,
+  "tipo_gasto": "Variable",
+  "estado": "pendiente"
+ }
+]
