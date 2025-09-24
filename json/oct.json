@@ -58,9 +58,9 @@
  {
   "concepto": "Servicios",
   "presupuesto": 200000,
-  "gasto_real": 0,
+  "gasto_real": 206030,
   "tipo_gasto": "Variable",
-  "estado": "pendiente"
+  "estado": "pago"
  },
  {
   "concepto": "Cuidado Adrian",
