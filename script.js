@@ -13,7 +13,8 @@ let arrServicios = [
     {concepto: "Acueducto", valor:0}
 ];
 let arrMercado = [
-    {concepto: "1er Mercado", valor:517551}
+    {concepto: "1er Mercado", valor:517551},
+    {concepto: "Huevos", valor:13000}
 ];
 let total_Ahorro = 0;
 let total_pre_mes = 0;
