@@ -12,6 +12,9 @@ let arrServicios = [
     {concepto: "Codensa", valor:58610},
     {concepto: "Acueducto", valor:0}
 ];
+let arrMercado = [
+    {concepto: "1er Mercado", valor:517551}
+];
 let total_Ahorro = 0;
 let total_pre_mes = 0;
 let total_real_mes = 0;
@@ -69,7 +72,8 @@ async function data() {
                 tr.style.background = 'green';
                 tr.style.color = '#fff';
                 tdEstado.textContent = "COMPLETO";
-            } else if(element.gasto_real > element.presupuesto || total > element.presupuesto){
+                console.log(total);
+            } else if(element.gasto_real > element.presupuesto){
                 console.log(total);
                 tr.style.background = 'red';
                 tr.style.color = '#fff';
@@ -121,7 +125,7 @@ async function data() {
 
 function detalles(detalleConcepto,tdGastoReal,tdConcepto){
 
-    if(detalleConcepto == "Carro" || detalleConcepto == "Servicios"){
+    if(detalleConcepto == "Carro" || detalleConcepto == "Servicios" || detalleConcepto == "Mercado"){
         let detalles = document.createElement('a');
         detalles.textContent = "detalles";
         detalles.href = "#";
@@ -139,6 +143,7 @@ function detalles(detalleConcepto,tdGastoReal,tdConcepto){
 
         if(detalleConcepto == "Carro"){
             let contenido =``;
+            total = 0;
             arrCarro.forEach(item => {
                 contenido += `<p>${item.concepto}: | ${formateador.format(item.valor)}</p>`;
                 total += item.valor;
@@ -151,6 +156,17 @@ function detalles(detalleConcepto,tdGastoReal,tdConcepto){
             let contenido =``;
             total = 0;
             arrServicios.forEach(item => {
+                contenido += `<p>${item.concepto}: | ${formateador.format(item.valor)}</p>`;
+                total += item.valor;
+                tarjeta.innerHTML = contenido;
+                tdGastoReal.textContent = formateador.format(total);
+            });
+        }
+
+        if(detalleConcepto == "Mercado"){
+            let contenido =``;
+            total = 0;
+            arrMercado.forEach(item => {
                 contenido += `<p>${item.concepto}: | ${formateador.format(item.valor)}</p>`;
                 total += item.valor;
                 tarjeta.innerHTML = contenido;
