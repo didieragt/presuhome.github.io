@@ -1,9 +1,9 @@
 const cdt = 1000000;
-const cajita_ahorro = 144790;
-const fondoTotal = 1600000;
+const cajita_ahorro = 295042;
+const fondoTotal = 1800000;
 let arrCarro = [
     {concepto: "Gasolina", valor:110000},
-    {concepto: "Parqueo", valor:0},
+    {concepto: "Parqueo", valor:67000},
     {concepto: "Lavado",valor:0}
 ];
 let arrServicios = [

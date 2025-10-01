@@ -2,19 +2,19 @@
  {
   "concepto": "Arriendo",
   "presupuesto": 110000,
-  "gasto_real": 0,
+  "gasto_real": 110000,
   "tipo_gasto": "Fijo"
  },
  {
   "concepto": "Parqueo moto 1",
   "presupuesto": 47000,
-  "gasto_real": 0,
+  "gasto_real": 47000,
   "tipo_gasto": "Fijo"
  },
  {
   "concepto": "Parqueo moto 2",
   "presupuesto": 70000,
-  "gasto_real": 0,
+  "gasto_real": 70000,
   "tipo_gasto": "Fijo"
  },
  {
@@ -26,7 +26,7 @@
  {
   "concepto": "Fondo",
   "presupuesto": 200000,
-  "gasto_real": 0,
+  "gasto_real": 200000,
   "tipo_gasto": "Fijo"
  },
  {
@@ -61,8 +61,8 @@
  },
  {
   "concepto": "Cuota Banco",
-  "presupuesto": 710000,
-  "gasto_real": 0,
+  "presupuesto": 780000,
+  "gasto_real": 780000,
   "tipo_gasto": "Variable"
  }
 ]
