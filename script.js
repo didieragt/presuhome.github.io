@@ -1,5 +1,5 @@
 const cdt = 1000000;
-const cajita_ahorro = 295042;
+const cajita_ahorro = 915042;
 const fondoTotal = 1800000;
 let arrCarro = [
     {concepto: "Gasolina", valor:110000},
