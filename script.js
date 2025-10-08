@@ -14,6 +14,7 @@ let arrServicios = [
 ];
 let arrMercado = [
     {concepto: "1er Mercado", valor:517551},
+    {concepto: "Huevos", valor:13000},
     {concepto: "Huevos", valor:13000}
 ];
 let total_Ahorro = 0;
