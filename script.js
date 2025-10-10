@@ -4,7 +4,8 @@ const fondoTotal = 1800000;
 let arrCarro = [
     {concepto: "Gasolina", valor:110000},
     {concepto: "Parqueo", valor:67000},
-    {concepto: "Lavado",valor:0}
+    {concepto: "Lavado",valor:0},
+    {concepto: "Mecanico", valor:80000}
 ];
 let arrServicios = [
     {concepto: "ETB", valor:79900},
