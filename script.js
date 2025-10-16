@@ -5,17 +5,21 @@ let arrCarro = [
     {concepto: "Gasolina", valor:110000},
     {concepto: "Parqueo", valor:67000},
     {concepto: "Lavado",valor:0},
-    {concepto: "Mecanico", valor:80000}
+    {concepto: "Mecanico", valor:80000},
+    {concepto: "Gasolina", valor:100000}
 ];
 let arrServicios = [
     {concepto: "ETB", valor:79900},
     {concepto: "Vanti", valor:17520},
     {concepto: "Codensa", valor:58610},
-    {concepto: "Acueducto", valor:0}
+    {concepto: "Acueducto", valor:0},
+    {concepto: "ETB", valor:79900}
 ];
 let arrMercado = [
     {concepto: "1er Mercado", valor:517551},
     {concepto: "Huevos", valor:13000},
+    {concepto: "Huevos", valor:13000},
+    {concepto: "2do Mercado", valor:79000},
     {concepto: "Huevos", valor:13000}
 ];
 let total_Ahorro = 0;
@@ -52,38 +56,40 @@ async function data() {
         }
         const datos = await response.json();
         datos.forEach(element => {
-            total_pre_mes += element.presupuesto;
-            total_real_mes += element.gasto_real;
+            total_pre_mes += element.Presupuestado;
+            total_real_mes += element.Gasto_Real;
             const tr = document.createElement('tr');
             const tdConcepto = document.createElement('td');
             const tdPresupuesto = document.createElement('td');
             const tdGastoReal = document.createElement('td');
             const tdEstado = document.createElement('td');
-            tdConcepto.textContent = element.concepto;
-            tdPresupuesto.textContent = formateador.format(element.presupuesto);
-            tdGastoReal.textContent = formateador.format(element.gasto_real);
-            tdEstado.textContent = element.estado;
+            tdConcepto.textContent = element.Concepto;
+            tdPresupuesto.textContent = formateador.format(element.Presupuestado);
+            tdGastoReal.textContent = formateador.format(element.Gasto_Real);
+            tdEstado.textContent = element.Estado;
             tr.appendChild(tdConcepto);
             tr.appendChild(tdPresupuesto);
             tr.appendChild(tdGastoReal);
             tr.appendChild(tdEstado);
             tbody.appendChild(tr);
 
-            detalles(element.concepto,tdGastoReal,tdConcepto);
+            detalles(element.Concepto,tdGastoReal,tdConcepto);
 
-            if(element.gasto_real == element.presupuesto || total == element.presupuesto){
-                tr.style.background = 'green';
-                tr.style.color = '#fff';
-                tdEstado.textContent = "COMPLETO";
-                console.log(total);
-            } else if(element.gasto_real > element.presupuesto){
-                console.log(total);
-                tr.style.background = 'red';
-                tr.style.color = '#fff';
-                tdEstado.textContent = "SOBRECOSTO";
-            } else{
-                tdEstado.textContent = "PENDIENTE";
+            switch(element.Estado){
+                case "Completado":
+                    tr.style.background = 'green';
+                    tr.style.color = '#fff';
+                    break;
+                case "Pendiente":
+                    tr.style.background = 'yellow';
+                    tr.style.color = '#000';
+                    break;
+                case "Sobre Costo":
+                    tr.style.background = 'red';
+                    tr.style.color = '#000';
+                    break;
             }
+
         });
 
         total_pre.textContent = formateador.format(total_pre_mes);

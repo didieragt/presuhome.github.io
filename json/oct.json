@@ -1,68 +1,90 @@
 [
  {
-  "concepto": "Arriendo",
-  "presupuesto": 110000,
-  "gasto_real": 110000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Arriendo",
+  "Presupuestado": 110000,
+  "Aporte60%": 66000,
+  "Aporte40%": 44000,
+  "Gasto_Real": 110000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Parqueo moto 1",
-  "presupuesto": 47000,
-  "gasto_real": 47000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Carro",
+  "Presupuestado": 317000,
+  "Aporte60%": 190200,
+  "Aporte40%": 126800,
+  "Gasto_Real": 357000,
+  "Estado": "Sobre Costo"
  },
  {
-  "concepto": "Parqueo moto 2",
-  "presupuesto": 70000,
-  "gasto_real": 70000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Parqueo moto 1",
+  "Presupuestado": 47000,
+  "Aporte60%": 28200,
+  "Aporte40%": 18800,
+  "Gasto_Real": 47000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Mercado",
-  "presupuesto": 800000,
-  "gasto_real": 517551,
-  "tipo_gasto": "Variable"
+  "Concepto": "Parqueo moto 2",
+  "Presupuestado": 70000,
+  "Aporte60%": 42000,
+  "Aporte40%": 28000,
+  "Gasto_Real": 70000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Fondo",
-  "presupuesto": 200000,
-  "gasto_real": 200000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Mercado",
+  "Presupuestado": 800000,
+  "Aporte60%": 480000,
+  "Aporte40%": 320000,
+  "Gasto_Real": 635551,
+  "Estado": "Pendiente"
  },
  {
-  "concepto": "Jardin Adrian",
-  "presupuesto": 200000,
-  "gasto_real": 200000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Fondo",
+  "Presupuestado": 200000,
+  "Aporte60%": 120000,
+  "Aporte40%": 80000,
+  "Gasto_Real": 200000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Carro",
-  "presupuesto": 317000,
-  "gasto_real": 0,
-  "tipo_gasto": "Variable"
+  "Concepto": "Jardin Adrian",
+  "Presupuestado": 200000,
+  "Aporte60%": 120000,
+  "Aporte40%": 80000,
+  "Gasto_Real": 200000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Servicios",
-  "presupuesto": 200000,
-  "gasto_real": 0,
-  "tipo_gasto": "Variable"
+  "Concepto": "Servicios",
+  "Presupuestado": 200000,
+  "Aporte60%": 120000,
+  "Aporte40%": 80000,
+  "Gasto_Real": 235930,
+  "Estado": "Sobre Costo"
  },
  {
-  "concepto": "Cuidado Adrian",
-  "presupuesto": 500000,
-  "gasto_real": 500000,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Cuidado Adrian",
+  "Presupuestado": 500000,
+  "Aporte60%": 300000,
+  "Aporte40%": 200000,
+  "Gasto_Real": 500000,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Admin Apto",
-  "presupuesto": 330350,
-  "gasto_real": 330350,
-  "tipo_gasto": "Fijo"
+  "Concepto": "Admin Apto Bosa",
+  "Presupuestado": 330350,
+  "Aporte60%": 198210,
+  "Aporte40%": 132140,
+  "Gasto_Real": 330350,
+  "Estado": "Completado"
  },
  {
-  "concepto": "Cuota Banco",
-  "presupuesto": 780000,
-  "gasto_real": 780000,
-  "tipo_gasto": "Variable"
+  "Concepto": "Cuota Banco",
+  "Presupuestado": 780000,
+  "Aporte60%": 468000,
+  "Aporte40%": 312000,
+  "Gasto_Real": 780000,
+  "Estado": "Completado"
  }
 ]
