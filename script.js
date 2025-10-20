@@ -6,13 +6,14 @@ let arrCarro = [
     {concepto: "Parqueo", valor:67000},
     {concepto: "Lavado",valor:0},
     {concepto: "Mecanico", valor:80000},
-    {concepto: "Gasolina", valor:100000}
+    {concepto: "Gasolina", valor:100000},
+    {concepto: "Gasolina", valor:50000}
 ];
 let arrServicios = [
     {concepto: "ETB", valor:79900},
     {concepto: "Vanti", valor:17520},
     {concepto: "Codensa", valor:58610},
-    {concepto: "Acueducto", valor:0},
+    {concepto: "Acueducto", valor:49650},
     {concepto: "ETB", valor:79900}
 ];
 let arrMercado = [
